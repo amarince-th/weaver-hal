@@ -55,7 +55,9 @@ using android::base::StringPrintf;
 namespace keymint::javacard {
 
 static bool isStrongBox = false; // true when linked with StrongBox HAL process
-const std::vector<uint8_t> kStrongBoxAppletAID = {0xA0, 0x00, 0x00, 0x00, 0x62};
+// const std::vector<uint8_t> kStrongBoxAppletAID = {0xA0, 0x00, 0x00, 0x00, 0x62};
+const std::vector<uint8_t> kStrongBoxAppletAID = {0xA0, 0x00, 0x00, 0x00, 0x18, 0x43, 
+                                                  0x43, 0x43, 0x43, 0x43, 0x42, 0x41, 0x01};
 
 class SecureElementCallback : public ISecureElementHalCallback {
  public:

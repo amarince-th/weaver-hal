@@ -23,7 +23,7 @@ cc_library_shared {
     shared_libs: [
         "android.se.omapi-V1-ndk",
         "libcutils",
-        "libjc_keymint_transport",
+        "libjc_keymint_transport-weaver",
         "libhardware",
         "libhidlbase",
         "libutils",
@@ -40,7 +40,7 @@ cc_library_shared {
 }
 
 cc_library {
-    name: "libjc_keymint_transport",
+    name: "libjc_keymint_transport-weaver",
     vendor_available: true,
     srcs: [
         "transport/*.cpp",
